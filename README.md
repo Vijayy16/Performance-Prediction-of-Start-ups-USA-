@@ -2,6 +2,8 @@
 # Performance Prediction of Startups – USA
 Duration: Aug 2024 – Dec 2024
 Domain: Business Analytics | Predictive Modeling | Strategy & Decision Support
+https://github.com/Vijayy16/Performance-Prediction-of-Start-ups-USA-/blob/main/startup_performance_usa.ipynb
+
 
 ## Project Overview
 This project focuses on predicting the performance of startups in the United States using
