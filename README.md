@@ -1,10 +1,7 @@
-# Performance-Prediction-of-Start-ups-USA-
-Predictive analytics project estimating startup success or failure probability using historical business data to support investor and entrepreneurial decision-making.
-
-Duration: Aug 2024 – Dec 2024
-Domain: Business Analytics | Predictive Modeling | Strategy & Decision Support
 
 # Performance Prediction of Startups – USA
+Duration: Aug 2024 – Dec 2024
+Domain: Business Analytics | Predictive Modeling | Strategy & Decision Support
 
 ## Project Overview
 This project focuses on predicting the performance of startups in the United States using
