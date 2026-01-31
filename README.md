@@ -4,54 +4,132 @@ Predictive analytics project estimating startup success or failure probability u
 Duration: Aug 2024 – Dec 2024
 Domain: Business Analytics | Predictive Modeling | Strategy & Decision Support
 
-Project Overview
+# Performance Prediction of Startups – USA
 
-This project focused on developing a predictive analytics solution to estimate the likelihood of startup success or failure in the United States using historical business and market data. The goal was to support investors, founders, and decision-makers by providing data-driven insights into startup performance, risk assessment, and growth potential. By combining statistical analysis with machine learning techniques, the project aimed to translate complex startup indicators into actionable decision support.
+## Project Overview
+This project focuses on predicting the performance of startups in the United States using
+financial and operational data. The goal is to classify startups as **Successful** or
+**Unsuccessful** based on factors such as funding, revenue, expenses, workforce size,
+industry, and location.
 
-Data Understanding & Preparation
+The analysis demonstrates how predictive analytics and machine learning can support
+investment evaluation and strategic decision-making.
 
-The analysis was conducted using a structured dataset containing startup-level attributes such as funding history, industry sector, company age, geographic location, team characteristics, and operational indicators. A strong emphasis was placed on data quality and relevance to ensure realistic modeling outcomes.
+---
 
-Key steps included:
+## Dataset
 
-Cleaning and validating historical startup datasets
+### Dataset Creation
+The dataset was **manually created** to simulate real-world startup performance data.
+It represents early- to mid-stage startups operating across multiple industries in the USA.
 
-Handling missing and inconsistent data points
+Each row corresponds to a startup, and each column represents a key business metric.
 
-Encoding categorical variables and scaling numerical features
+### Dataset File
+- **SPU.xlsx**
 
-Performing exploratory data analysis (EDA) to identify patterns, trends, and correlations associated with startup outcomes
+### Features Included
+- `startup_name` – Name of the startup  
+- `funding_usd` – Total funding raised (USD)  
+- `employees` – Number of employees  
+- `revenue` – Annual revenue (USD)  
+- `expenses` – Annual expenses (USD)  
+- `industry` – Startup industry sector  
+- `location` – City/State in the USA  
+- `status` – Startup outcome (Successful / Unsuccessful)
 
-Feature selection to isolate the most influential business and market factors
+---
 
-Analytical & Modeling Approach
+## Tools & Technologies Used
+- **Python**
+- **Pandas** – Data manipulation and analysis
+- **NumPy** – Numerical computations
+- **Scikit-learn** – Machine learning modeling
+- **Jupyter Notebook** – Analysis and experimentation
+- **Excel** – Dataset creation and storage
 
-A predictive modeling framework was designed to estimate the probability of startup success or failure while maintaining interpretability for business decision-making. Multiple models were developed and evaluated to balance predictive accuracy with explainability.
+---
 
-Methodology and techniques applied:
+## Analysis Performed
 
-Predictive analytics and statistical modeling to assess success likelihood
+### 1. Exploratory Data Analysis (EDA)
+- Examined dataset structure and data types
+- Generated descriptive statistics
+- Identified distributions of funding, revenue, and expenses
 
-Feature importance analysis to identify key drivers of startup performance
+### 2. Feature Engineering
+- Created a new feature:
+  - **Profit = Revenue − Expenses**
+- Encoded categorical variables such as industry and startup status
 
-Model evaluation using classification metrics and performance comparisons
+### 3. Target Variable Definition
+- Startup performance was encoded as:
+  - `1` → Successful
+  - `0` → Unsuccessful
 
-Scenario-based analysis to assess risk and opportunity across different startup profiles
+---
 
-This approach ensured that results were not only accurate but also understandable and actionable for non-technical stakeholders.
+## Machine Learning Model
 
-Tools & Technologies Used
+### Model Used
+- **Logistic Regression**
 
-Python: Pandas, NumPy, Scikit-learn
+### Input Features
+- Funding amount
+- Employee count
+- Revenue
+- Expenses
+- Encoded industry
 
-Data Analysis & Modeling: Predictive analytics, classification techniques
+### Model Objective
+Predict whether a startup is **Successful** or **Unsuccessful**.
 
-Visualization: Matplotlib, Seaborn for trend and insight visualization
+---
 
-Environment: Jupyter Notebook
+## Model Evaluation
 
-Business Impact & Insights
+### Metrics Used
+- Accuracy
+- Precision
+- Recall
+- F1-score
 
-The project delivered a structured framework to assess startup risk and opportunity using data-driven insights rather than intuition alone. The model highlighted key performance indicators such as funding patterns, market sector, and operational maturity as strong predictors of success. These insights support informed investment decisions, strategic planning, and resource allocation for both investors and entrepreneurs.
+### Results
+- The model achieved **100% accuracy** on the test dataset.
 
-By translating analytical results into executive-ready insights, the project demonstrates the practical application of predictive analytics in real-world business and strategy contexts.
+### Interpretation
+The perfect accuracy is primarily due to:
+- Small dataset size
+- Strong separation between profitable and non-profitable startups
+
+This result demonstrates the feasibility of performance prediction but may not generalize
+to larger real-world datasets.
+
+---
+
+## Limitations
+- Small sample size
+- Manually created dataset
+- Results may overfit due to strong profit-based separation
+
+---
+
+## Future Improvements
+- Expand dataset using real-world startup data
+- Apply cross-validation and regularization
+- Experiment with advanced models (Random Forest, XGBoost)
+- Include time-based and growth-rate features
+
+---
+
+## Repository Structure
+README.md
+├── SPU.xlsx
+└── startup_performance_usa.ipynb
+
+
+---
+
+## Key Takeaway
+This project demonstrates how financial and operational startup data can be transformed
+into actionable insights using predictive analytics and machine learning techniques.
